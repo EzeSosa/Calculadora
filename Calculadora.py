@@ -62,6 +62,7 @@ def boton_cero():
     cad = str(f"{cad}0")
     cadena.set(cad)
 
+#FUNCIONES DE LAS OPERACIONES -------------------------------------------------------------
 def boton_suma():
     cad = cuentas.get()
     cad = str(f"{cad}+")
@@ -85,7 +86,7 @@ def boton_divi():
 def boton_igual():
     cad = cuentas.get()
     try:
-
+        #UTILIZO CADENAS QUE SE TRANSFORMARÁN EN ARRAYS PARA LA OBTENCIÓN DE LOS TÉRMINOS
         if cad.find("+") != 0 and cad.find("-") <= 0 and cad.find("*") <= 0 and cad.find("/") <= 0:
             txt = ""
             txt2 = ""
